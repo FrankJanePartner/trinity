@@ -262,4 +262,12 @@
     .main-wrap { padding: 2rem 5%; }
     .success-box { padding: 2rem 1.5rem; }
     .options-group.grid-2 { grid-template-columns: 1fr; }
+     .another-form {
+      margin-bottom: 10px;
+      /* border: 1px solid red; */
+    }
+    .another-form-row { 
+      gap:0; 
+      margin-bottom: 10px;
+    }
   }
