@@ -134,23 +134,22 @@
   }
   .check-item.selected {
     border-color: var(--purple);
-    background: rgba(61,46,142,0.12);
-    color: var(--purple);
+    background: var(--purple);
+    color: #fff;
     font-weight: 600;
   }
   .check-item.selected .custom-check {
-    border-color: var(--purple);
-    background: var(--purple);
+    border-color: #fff;
+    background: #fff;
   }
   .check-item.selected .custom-check::after {
-    display: block !important;
+    color: var(--purple);
   }
   .custom-radio::after { content: ''; display: none; width: 6px; height: 6px; background: #fff; border-radius: 50%; }
   .custom-check::after {
-    content: ''; display: none; position: absolute;
-    width: 10px; height: 6px;
-    border-left: 2px solid #fff; border-bottom: 2px solid #fff;
-    left: 50%; top: 50%; transform: translate(-50%, -55%) rotate(-45deg);
+    content: '✓'; display: none; position: absolute;
+    color: #fff; font-size: 12px; font-weight: bold;
+    left: 50%; top: 50%; transform: translate(-50%, -50%);
   }
   .radio-item span, .check-item span { font-size: 0.84rem; color: var(--text); line-height: 1.3; }
 
