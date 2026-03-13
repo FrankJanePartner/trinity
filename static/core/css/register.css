@@ -132,10 +132,19 @@
     border-radius: 3px;
     position: relative;
   }
-  .radio-item.selected .custom-radio { border-color: var(--purple); background: var(--purple); }
-  .check-item.selected .custom-check { border-color: var(--purple); background: var(--purple); }
-  .radio-item.selected .custom-radio::after { display: block !important; }
-  .check-item.selected .custom-check::after { display: block !important; }
+  .check-item.selected {
+    border-color: var(--purple);
+    background: rgba(61,46,142,0.12);
+    color: var(--purple);
+    font-weight: 600;
+  }
+  .check-item.selected .custom-check {
+    border-color: var(--purple);
+    background: var(--purple);
+  }
+  .check-item.selected .custom-check::after {
+    display: block !important;
+  }
   .custom-radio::after { content: ''; display: none; width: 6px; height: 6px; background: #fff; border-radius: 50%; }
   .custom-check::after {
     content: ''; display: none; position: absolute;
