@@ -62,34 +62,28 @@
       <p>All fields marked with <span style="color:var(--orange)">*</span> are required. Please answer honestly — selections are reviewed carefully.</p>
     </div>
     <div class="form-body">
-      {% csrf_token %}
+
       <div class="form-section-divider" style="margin-top:0;padding-top:0;border-top:none">
         <h4>Personal Information</h4>
         <p>Tell us about yourself</p>
       </div>
 
-      <div class="form-row">
-        <div class="form-group">
+      <div class="form-row another-form-row">
+        <div class="form-group another-form">
           <label for="fullName">Full Name <span class="req">*</span></label>
           <input type="text" id="fullName" placeholder="Your full name" />
         </div>
-        <div class="form-group">
+        <div class="form-group another-form">
           <label for="phone">Phone Number <span class="req">*</span> <span class="hint">(WhatsApp preferred)</span></label>
           <input type="tel" id="phone" placeholder="+234 800 000 0000" />
         </div>
       </div>
-      <div class="form-row">
-        <div class="form-group">
+      <div class="form-row another-form-row">
+        <div class="form-group another-form">
           <label for="email">Email Address <span class="req">*</span></label>
           <input type="email" id="email" placeholder="yourname@email.com" />
         </div>
-        <div class="form-group">
-          <label for="password">Create Password <span class="req">*</span></label>
-          <input type="password" id="password" placeholder="Min. 8 characters" />
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group">
+        <div class="form-group another-form">
           <label for="location">City / State <span class="req">*</span></label>
           <input type="text" id="location" placeholder="e.g. Lagos, Lagos State" />
         </div>
@@ -123,15 +117,15 @@
       </div>
 
       <div class="form-group">
-        <label>Which area of real estate interests you most? <span class="req">*</span> <span class="hint">(Multiple selection allowed)</span></label>
+        <label>Which area of real estate interests you most? <span class="req">*</span> <span class="hint">(Select all that apply)</span></label>
         <div class="options-group grid-2" id="interest">
-          <label class="radio-item" onclick="toggleCheck(this)"><input type="checkbox" name="interest" value="Land Sales"><div class="custom-checkbox"></div><span>Land Sales</span></label>
-          <label class="radio-item" onclick="toggleCheck(this)"><input type="checkbox" name="interest" value="Residential Rentals"><div class="custom-checkbox"></div><span>Residential Rentals</span></label>
-          <label class="radio-item" onclick="toggleCheck(this)"><input type="checkbox" name="interest" value="Property Development"><div class="custom-checkbox"></div><span>Property Developments</span></label>
-          <label class="radio-item" onclick="toggleCheck(this)"><input type="checkbox" name="interest" value="Property Investment"><div class="custom-checkbox"></div><span>Property Investment</span></label>
-          <label class="radio-item" onclick="toggleCheck(this)"><input type="checkbox" name="interest" value="Property Management"><div class="custom-checkbox"></div><span>Property Management</span></label>
-          <label class="radio-item" onclick="toggleCheck(this)"><input type="checkbox" name="interest" value="Real Estate Marketing"><div class="custom-checkbox"></div><span>Real Estate Marketing</span></label>
-          <label class="radio-item" onclick="toggleCheck(this)"><input type="checkbox" name="interest" value="Other"><div class="custom-checkbox"></div><span>Other</span></label>
+          <label class="radio-item" onclick="toggleCheck(this)"><input type="checkbox" name="interest" value="Land Sales"><div class="custom-radio"></div><span>Land Sales</span></label>
+          <label class="radio-item" onclick="toggleCheck(this)"><input type="checkbox" name="interest" value="Residential Rentals"><div class="custom-radio"></div><span>Residential Rentals</span></label>
+          <label class="radio-item" onclick="toggleCheck(this)"><input type="checkbox" name="interest" value="Property Development"><div class="custom-radio"></div><span>Property Developments</span></label>
+          <label class="radio-item" onclick="toggleCheck(this)"><input type="checkbox" name="interest" value="Property Investment"><div class="custom-radio"></div><span>Property Investment</span></label>
+          <label class="radio-item" onclick="toggleCheck(this)"><input type="checkbox" name="interest" value="Property Management"><div class="custom-radio"></div><span>Property Management</span></label>
+          <label class="radio-item" onclick="toggleCheck(this)"><input type="checkbox" name="interest" value="Real Estate Marketing"><div class="custom-radio"></div><span>Real Estate Marketing</span></label>
+          <label class="radio-item" onclick="toggleCheck(this)"><input type="checkbox" name="interest" value="Other"><div class="custom-radio"></div><span>Other</span></label>
         </div>
       </div>
 

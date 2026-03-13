@@ -166,12 +166,6 @@ nav {
   position: relative; overflow: hidden;
   display: flex;
 }
-
-.flier-image img {
-  width: 500px;
-  height: 500px;
-  /* height: 100%; */
-}
 .flier-section::before {
   content: ''; position: absolute; inset: 0;
   background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(61,46,142,0.4) 0%, transparent 70%);
@@ -389,18 +383,6 @@ footer p { color: rgba(255,255,255,0.2); font-size: 0.75rem; }
   .who-profiles { grid-template-columns: repeat(3, 1fr); }
   .schedule-footer { flex-direction: column; }
   .flier-image-wrap { order: -1; }
-  .flier-section {
-    flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
-  }
-
-  .flier-section img {
-    margin-top: 20px;
-    width: 320px;
-    height: 320px;
-    border-radius: 5px;
-  }
 }
 @media (max-width: 480px) {
   section { padding: 4rem 5%; }

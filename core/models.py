@@ -1,10 +1,9 @@
 from django.db import models
-from django.contrib.auth.models import User
 
 class ScholarshipApplication(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='application')
     full_name = models.CharField(max_length=255)
     phone_number = models.CharField(max_length=20)
+    email = models.EmailField(unique=True)
     city_state = models.CharField(max_length=255)
     
     INVOLVEMENT_CHOICES = [
@@ -51,4 +50,4 @@ class ScholarshipApplication(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"Application from {self.full_name} ({self.user.username})"
+        return f"Application from {self.full_name}"

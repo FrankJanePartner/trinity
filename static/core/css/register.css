@@ -87,7 +87,7 @@
   .form-section-divider p { color: var(--text-muted); font-size: 0.78rem; }
 
   .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
-  .form-group { margin-bottom: 1.5rem; }
+  .form-group { margin-bottom: 1.3rem;}
   .form-group:last-child { margin-bottom: 0; }
   label { display: block; font-size: 0.82rem; font-weight: 600; color: var(--deep); margin-bottom: 0.5rem; }
   label .req { color: var(--orange); margin-left: 2px; }
@@ -255,6 +255,14 @@
   }
   @media (max-width: 620px) {
     .form-row { grid-template-columns: 1fr; }
+    .another-form {
+      margin-bottom: 10px;
+      /* border: 1px solid red; */
+    }
+    .another-form-row { 
+      gap:0; 
+      margin-bottom: 10px;
+    }
     .sidebar { grid-template-columns: 1fr; }
     .form-body { padding: 1.5rem; }
     .form-section-header { padding: 1.5rem; }
