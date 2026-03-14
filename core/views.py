@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
 from .models import ScholarshipApplication
 import json
 
@@ -9,12 +10,13 @@ def index(request):
 def register_view(request):
     return render(request, 'account/register.html')
 
+@csrf_exempt
 def api_register(request):
     if request.method == 'POST':
         print("POST received")
         try:
             # Handle both JSON and Form data
-            if request.content_type == 'application/json':
+            if 'application/json' in request.content_type:
                 data = json.loads(request.body)
                 print("JSON data:", data)
             else:
